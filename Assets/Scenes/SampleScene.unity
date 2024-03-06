@@ -427,7 +427,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d052b45d8fe82394bb2bbd87fdd1b21d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentWave: {fileID: 11400000, guid: 6ec0ca12bf2f11a4db7d610bd1572e49, type: 2}
+  waveConfigs:
+  - {fileID: 11400000, guid: 6ec0ca12bf2f11a4db7d610bd1572e49, type: 2}
+  - {fileID: 11400000, guid: c2b1bc771e829fa478a0f76567aa38ed, type: 2}
+  timeBetweenWaves: 1
 --- !u!1 &1760404134
 GameObject:
   m_ObjectHideFlags: 0
