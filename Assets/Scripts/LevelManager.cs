@@ -7,8 +7,16 @@ public class LevelManager : MonoBehaviour
 {
     [SerializeField] float gameOverDelay = 2.0f;
 
+    ScoreKeeper scoreKeeper;
+
+    void Awake()
+    {
+        scoreKeeper = FindObjectOfType<ScoreKeeper>();
+    }
+
     public void LoadGame()
     {
+        scoreKeeper.ResetScore();
         SceneManager.LoadScene("Game");
     }
 
